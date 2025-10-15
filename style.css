@@ -1,0 +1,120 @@
+/* ------------------------
+   Base styles & typography
+------------------------ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', Consolas, Monaco, monospace;
+  background-color: #1e1e2f; /* Dark VS Code-style background */
+  color: #c0c0c0;
+  line-height: 1.6;
+}
+
+a {
+  color: #0ff; /* Neon cyan for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff6eff; /* Neon pink on hover */
+  text-shadow: 0 0 5px #ff6eff, 0 0 10px #ff6eff;
+}
+
+/* ------------------------
+   Headers
+------------------------ */
+header {
+  background-color: #252535;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #0ff;
+}
+
+header h1 {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  margin: 0;
+}
+
+/* ------------------------
+   Sections
+------------------------ */
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #2a2a3f;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2),
+              0 0 30px rgba(255, 0, 255, 0.1);
+}
+
+section h2 {
+  color: #ff6eff;
+  text-shadow: 0 0 5px #ff6eff, 0 0 10px #ff6eff;
+}
+
+/* ------------------------
+   Images
+------------------------ */
+img {
+  max-width: 100%;
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #ff6eff;
+}
+
+/* ------------------------
+   Footer
+------------------------ */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #252535;
+  border-top: 2px solid #ff6eff;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ------------------------
+   Buttons
+------------------------ */
+button {
+  background-color: #0ff;
+  color: #1e1e2f;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff6eff;
+  color: #fff;
+  box-shadow: 0 0 15px #ff6eff, 0 0 30px #ff6eff;
+}
+
+/* ------------------------
+   Code blocks / pre
+------------------------ */
+pre, code {
+  background-color: #1e1e2f;
+  color: #0ff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* ------------------------
+   Glow effect for sections
+------------------------ */
+section:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4),
+              0 0 40px rgba(255, 0, 255, 0.2);
+}
