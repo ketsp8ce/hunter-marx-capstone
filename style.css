@@ -37,12 +37,64 @@ header h1 {
 }
 
 /* ------------------------
-   Sections
+   Navigation Buttons
+------------------------ */
+nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+button {
+  background-color: #0ff;
+  color: #1e1e2f;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff6eff;
+  color: #fff;
+  box-shadow: 0 0 15px #ff6eff, 0 0 30px #ff6eff;
+}
+
+/* ------------------------
+   Main content / Sections
 ------------------------ */
 main {
   padding: 2rem;
 }
 
+/* Neon section for dynamically loaded content */
+.neon-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #2a2a3f;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2),
+              0 0 30px rgba(255, 0, 255, 0.1);
+}
+
+.neon-section h2 {
+  color: #ff6eff;
+  text-shadow: 0 0 5px #ff6eff, 0 0 10px #ff6eff;
+}
+
+.neon-section:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4),
+              0 0 40px rgba(255, 0, 255, 0.2);
+}
+
+/* ------------------------
+   Sections (static content)
+------------------------ */
 section {
   margin-bottom: 3rem;
   padding: 1.5rem;
@@ -77,27 +129,6 @@ footer {
   border-top: 2px solid #ff6eff;
   color: #888;
   font-size: 0.9rem;
-}
-
-/* ------------------------
-   Buttons
------------------------- */
-button {
-  background-color: #0ff;
-  color: #1e1e2f;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-  transition: all 0.2s ease-in-out;
-}
-
-button:hover {
-  background-color: #ff6eff;
-  color: #fff;
-  box-shadow: 0 0 15px #ff6eff, 0 0 30px #ff6eff;
 }
 
 /* ------------------------
@@ -142,13 +173,8 @@ pre, code {
 }
 
 /* ------------------------
-   Glow effect for sections
+   Tables
 ------------------------ */
-section:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4),
-              0 0 40px rgba(255, 0, 255, 0.2);
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -168,4 +194,12 @@ th {
   color: #00e0ff;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/* ------------------------
+   Glow effect for sections
+------------------------ */
+section:hover, .project-highlight:hover, .neon-section:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4),
+              0 0 40px rgba(255, 0, 255, 0.2);
 }
