@@ -1,9 +1,9 @@
 <section>
-  <h2>3D Shark Model</h2>
-  <p>This project used openGL and c++ to learn basics of 3D object instantiation in a linear algebra enviornment
-    Practiced concepts such as:
-    - mesh objects
-    -vector spaces
+  <h2>Grazioso-Salvare-Dashboard</h2>
+  <p>This project was created for CS340 - Client Server Developmemt. The original dashboard was created
+    inside a pre-configured virtual environment. The goal as a student was to created a CRUD moduel
+    and practice querying the database.
+  </p>
   </section>
 
 <div>
