@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Outcomes</title>
+  <style>
+    body {
+      background-color: #0a0a0f;
+      color: #e0e0ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.8;
+    }
+
+    h1 {
+      text-align: center;
+      color: #66ffcc;
+      text-shadow: 0 0 10px #00ffaa;
+      margin-bottom: 2rem;
+    }
+
+    ol {
+      counter-reset: outcome-counter;
+      list-style: none;
+      padding: 0;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    li {
+      counter-increment: outcome-counter;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(102, 255, 204, 0.3);
+      border-radius: 10px;
+      padding: 1.2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px rgba(102, 255, 204, 0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    li:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(102, 255, 204, 0.4);
+    }
+
+    li::before {
+      content: "Outcome " counter(outcome-counter) ": ";
+      color: #66ffcc;
+      font-weight: bold;
+      text-shadow: 0 0 6px #00ffaa;
+    }
+
+    a {
+      color: #66ffcc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #99ffee;
+    }
+  </style>
+</head>
+<body>
+  <h1>Computer Science Course Outcomes</h1>
+  <ol>
+    <li id="outcome1">
+      Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science.
+    </li>
+    <li id="outcome2">
+      Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.
+    </li>
+    <li id="outcome3">
+      Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices.
+    </li>
+    <li id="outcome4">
+      Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.
+    </li>
+    <li id="outcome5">
+      Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.
+    </li>
+  </ol>
+</body>
+</html>

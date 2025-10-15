@@ -118,3 +118,24 @@ section:hover {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.4),
               0 0 40px rgba(255, 0, 255, 0.2);
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #121212;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+}
+
+th, td {
+  border: 1px solid #00ffcc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #0a0a0a;
+  color: #00e0ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

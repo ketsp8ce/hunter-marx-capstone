@@ -4,48 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hunter Marx Capstone</title>
-  <meta name="description" content="CS499 Capstone Portfolio – journals, code review, and evaluation">
+  <meta name="description" content="CS499 Capstone Portfolio – journals, code review, evaluation, and projects.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Hunter Marx Capstone</h1>
+    <h1>Hunter Marx Capstone Portfolio</h1>
     <nav>
-      <a href="#journals">Journals</a> |
-      <a href="#code-review">Code Review</a> |
-      <a href="#evaluation">Evaluation</a> |
-      <a href="#projects">Projects</a>
+      <button onclick="loadPage('projects/pokemon-dashboard.html')">Pokémon Dashboard</button>
+      <button onclick="loadPage('projects/shark-model.html')">3D Shark Model</button>
+      <button onclick="loadPage('projects/linux-vm.html')">Linux VM Walkthrough</button>
+      <button onclick="loadPage('journals/journal1.html')">Journals</button>
+      <button onclick="loadPage('code-review/review1.html')">Code Review</button>
+      <button onclick="loadPage('evaluation/evaluation1.html')">Evaluation</button>
     </nav>
   </header>
 
-  <main>
-    <section id="journals">
-      <h2>Journals</h2>
-      <p>Links to journals or summaries go here.</p>
-    </section>
-
-    <section id="code-review">
-      <h2>Code Review</h2>
-      <p>Code review documents go here.</p>
-    </section>
-
-    <section id="evaluation">
-      <h2>Evaluation</h2>
-      <p>Evaluation documents or results go here.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Project Links</h2>
-      <ul>
-        <li><a href="https://github.com/ketsp8ce/pokemon-dashboard">Pokémon Dashboard</a></li>
-        <li><a href="https://github.com/ketsp8ce/data-analysis">Data Analysis</a></li>
-        <li><a href="https://github.com/ketsp8ce/ml-models">Machine Learning Models</a></li>
-      </ul>
-    </section>
+  <main id="content">
+    <p>Welcome to my capstone portfolio! Click a button above to explore projects and course artifacts.</p>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Hunter Marx</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
