@@ -1,68 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hunter Marx Capstone</title>
-  <meta name="description" content="CS499 Capstone Portfolio – journals, code review, evaluation, and projects.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="CS499 Capstone Portfolio – journals, code review, evaluation, and projects." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Hunter Marx Capstone Portfolio</h1>
     <nav>
-      <button onclick="loadPage('index-content.html')">Home</button>
-      <button onclick="loadPage('pokemon_dashboard.html')">Pokémon Dashboard</button>
-      <button onclick="loadPage('shark_model.html')">3D Shark Model</button>
-      <button onclick="loadPage('linux_vm_guide.html')">Linux VM Guide</button>
-      <button onclick="loadPage('journals.html')">Capstone Journals</button>
-      <button onclick="loadPage('course_outcomes.html')">Course Outcomes</button>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='projects/pokemon_dashboard.html'">Pokémon Dashboard</button>
+      <button onclick="location.href='projects/shark_model.html'">3D Shark Model</button>
+      <button onclick="location.href='projects/linux_vm_guide.html'">Linux VM Guide</button>
+      <button onclick="location.href='journals/journals.html'">Capstone Journals</button>
+      <button onclick="location.href='course_outcomes.html'">Course Outcomes</button>
     </nav>
   </header>
 
   <main id="content">
+    <!-- Welcome Section -->
+    <section id="welcome">
+      <h2>Welcome to my Capstone Portfolio!</h2>
+      <p>
+        This portfolio showcases my projects and academic journals from my CS499 Capstone course. Use the navigation above to explore different sections.
+      </p>
+      <p>
+        Here you'll find highlights from my work, including detailed project descriptions, code reviews, and reflections on emerging trends in technology.
+      </p>
+    </section>
 
-    <!-- Reflection Section (moved to the top as requested) -->
+    <hr>
+
+    <!-- Reflection Section -->
     <section id="reflection">
       <h2>Self-Assessment and Reflection</h2>
-
-      <h3>Course Outcomes</h3>
-      <ul>
-        <li><b>Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science.</b></li>
-        <li><b>Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.</b></li>
-        <li><b>Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices.</b></li>
-        <li><b>Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.</b></li>
-        <li><b>Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.</b></li>
-      </ul>
-
-      <p>
-  I believe I have successfully met four of the five course outcomes through the completion of my Capstone artifacts. The only outcome that remains partially unmet involves developing a <strong>security mindset</strong>, as none of my current projects specifically focus on cybersecurity. The following describes how each artifact aligns with the other four course outcomes.
-</p>
-
-<h4>1. Employ strategies for building collaborative environments</h4>
-<p>
-  While most of my coursework and Capstone projects were completed independently, I demonstrated collaborative practices through consistent use of <strong>version control with Git and GitHub</strong>. I structured my repositories with clear branches, meaningful commit messages, and readable documentation to make my work accessible and replicable by others. This approach reflects real-world collaborative workflows and prepares me to work effectively within a team environment in future professional projects.
-</p>
-
-<h4>2. Design, develop, and deliver professional-quality communications</h4>
-<p>
-  My Capstone portfolio itself demonstrates professional communication by presenting each artifact with coherent technical documentation, design overviews, and visual representations. In particular, the <strong>Linux Virtualization Guide</strong> was designed to communicate complex setup instructions clearly for users of all experience levels. Each section is structured and written with clarity, tone, and consistency appropriate for a technical audience, showcasing my ability to produce professional-quality written and visual materials.
-</p>
-
-<h4>3. Design and evaluate computing solutions using algorithmic principles and best practices</h4>
-<p>
-  The <strong>3D Shark Model Project</strong> directly supports this outcome. I applied algorithmic thinking to develop and evaluate 3D transformations, coordinate systems, and rendering processes in both OpenGL and Unity environments. Recreating the model across two platforms required understanding the trade-offs between low-level and high-level abstraction, performance optimization, and rendering efficiency. This project demonstrates my ability to apply computer science principles to design and evaluate solutions that solve real technical problems.
-</p>
-
-<h4>4. Demonstrate effective use of computing techniques, skills, and tools to deliver industry value</h4>
-<p>
-  The <strong>Pokémon Dashboard Database Project</strong> reflects my ability to leverage modern technologies and tools to create practical, value-driven solutions. I built this client–server web application using the <strong>MEAN stack (MongoDB, Express, Angular, Node.js)</strong>, applying CRUD operations and RESTful API integration. By setting up the environment manually instead of using a preconfigured system, I demonstrated independence, technical skill, and problem-solving ability—skills that translate directly to real-world software development workflows.
-</p>
-
-<p>
-  Together, these artifacts illustrate my growth across multiple areas of computer science: collaboration and version control, professional communication, software design, and technical implementation. Each project has strengthened my ability to conceptualize, plan, and deliver computing solutions that are both functional and professionally presented.
-</p>
-
 
       <p>
         As I near the end of my Computer Science program, I have gained a great deal from this Capstone course. I was challenged to enhance past projects in three key areas: software design, data structures and algorithms, and databases.
@@ -104,24 +78,23 @@
     <section id="projects">
       <h2>Project Links</h2>
       <nav>
-        <button onclick="loadPage('projects/pokemon_dashboard.html')">Pokémon Dashboard</button>
-        <button onclick="loadPage('projects/shark_model.html')">3D Shark Model</button>
-        <button onclick="loadPage('projects/linux_vm_guide.html')">Linux VM Guide</button>
+        <button onclick="location.href='projects/pokemon_dashboard.html'">Pokémon Dashboard</button>
+        <button onclick="location.href='projects/shark_model.html'">3D Shark Model</button>
+        <button onclick="location.href='projects/linux_vm_guide.html'">Linux VM Guide</button>
       </nav>
     </section>
+
+    <hr>
 
     <!-- Journals Section -->
     <section id="journals">
       <h2>Journals</h2>
       <div id="journals-list">
-        <button data-url="..journals/career_journal.html" data-container="journal-content">Career Journal</button>
-        <button data-url="..journals/code_review_journal.html" data-container="journal-content">Code Review Journal</button>
-        <button data-url="..journals/emerging_trends.html" data-container="journal-content">Emerging Trends Journal</button>
+        <button onclick="location.href='journals/career_journal.html'">Career Journal</button>
+        <button onclick="location.href='journals/code_review_journal.html'">Code Review Journal</button>
+        <button onclick="location.href='journals/emerging_trends.html'">Emerging Trends Journal</button>
       </div>
     </section>
-
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>

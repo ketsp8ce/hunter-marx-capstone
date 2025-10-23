@@ -14,14 +14,22 @@
       line-height: 1.8;
     }
 
-    h1 {
-      text-align: center;
+    h1, h3, h4 {
       color: #66ffcc;
       text-shadow: 0 0 10px #00ffaa;
+    }
+
+    h1 {
+      text-align: center;
       margin-bottom: 2rem;
     }
 
-    ol {
+    h3 {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    ol, ul {
       counter-reset: outcome-counter;
       list-style: none;
       padding: 0;
@@ -52,6 +60,16 @@
       text-shadow: 0 0 6px #00ffaa;
     }
 
+    p {
+      max-width: 900px;
+      margin: 1rem auto;
+      line-height: 1.8;
+    }
+
+    strong {
+      color: #99ffee;
+    }
+
     a {
       color: #66ffcc;
       text-decoration: none;
@@ -65,22 +83,42 @@
 </head>
 <body>
   <h1>Computer Science Course Outcomes</h1>
-  <ol>
-    <li id="outcome1">
-      Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science.
-    </li>
-    <li id="outcome2">
-      Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.
-    </li>
-    <li id="outcome3">
-      Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices.
-    </li>
-    <li id="outcome4">
-      Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.
-    </li>
-    <li id="outcome5">
-      Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.
-    </li>
-  </ol>
+
+  <h3>Course Outcomes</h3>
+  <ul>
+    <li><b>Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science.</b></li>
+    <li><b>Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.</b></li>
+    <li><b>Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices.</b></li>
+    <li><b>Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.</b></li>
+    <li><b>Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.</b></li>
+  </ul>
+
+  <p>
+    I believe I have successfully met four of the five course outcomes through the completion of my Capstone artifacts. The only outcome that remains partially unmet involves developing a <strong>security mindset</strong>, as none of my current projects specifically focus on cybersecurity. The following describes how each artifact aligns with the other four course outcomes.
+  </p>
+
+  <h4>1. Employ strategies for building collaborative environments</h4>
+  <p>
+    While most of my coursework and Capstone projects were completed independently, I demonstrated collaborative practices through consistent use of <strong>version control with Git and GitHub</strong>. I structured my repositories with clear branches, meaningful commit messages, and readable documentation to make my work accessible and replicable by others. This approach reflects real-world collaborative workflows and prepares me to work effectively within a team environment in future professional projects.
+  </p>
+
+  <h4>2. Design, develop, and deliver professional-quality communications</h4>
+  <p>
+    My Capstone portfolio itself demonstrates professional communication by presenting each artifact with coherent technical documentation, design overviews, and visual representations. In particular, the <strong>Linux Virtualization Guide</strong> was designed to communicate complex setup instructions clearly for users of all experience levels. Each section is structured and written with clarity, tone, and consistency appropriate for a technical audience, showcasing my ability to produce professional-quality written and visual materials.
+  </p>
+
+  <h4>3. Design and evaluate computing solutions using algorithmic principles and best practices</h4>
+  <p>
+    The <strong>3D Shark Model Project</strong> directly supports this outcome. I applied algorithmic thinking to develop and evaluate 3D transformations, coordinate systems, and rendering processes in both OpenGL and Unity environments. Recreating the model across two platforms required understanding the trade-offs between low-level and high-level abstraction, performance optimization, and rendering efficiency. This project demonstrates my ability to apply computer science principles to design and evaluate solutions that solve real technical problems.
+  </p>
+
+  <h4>4. Demonstrate effective use of computing techniques, skills, and tools to deliver industry value</h4>
+  <p>
+    The <strong>Pokémon Dashboard Database Project</strong> reflects my ability to leverage modern technologies and tools to create practical, value-driven solutions. I built this client–server web application using the <strong>MEAN stack (MongoDB, Express, Angular, Node.js)</strong>, applying CRUD operations and RESTful API integration. By setting up the environment manually instead of using a preconfigured system, I demonstrated independence, technical skill, and problem-solving ability—skills that translate directly to real-world software development workflows.
+  </p>
+
+  <p>
+    Together, these artifacts illustrate my growth across multiple areas of computer science: collaboration and version control, professional communication, software design, and technical implementation. Each project has strengthened my ability to conceptualize, plan, and deliver computing solutions that are both functional and professionally presented.
+  </p>
 </body>
 </html>
