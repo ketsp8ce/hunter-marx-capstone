@@ -4,116 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Code Review Video</title>
-  <style>
-    /* Body Styling */
-    body {
-      background-color: #0a0a0a; /* deep black background */
-      color: #ff4c4c; /* vivid red text */
-      font-family: 'Georgia', 'Times New Roman', serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.8;
-    }
-
-    /* Header Styling */
-    header {
-      background-color: #1a0000; /* dark red header */
-      padding: 1rem 2rem;
-      text-align: center;
-      box-shadow: 0 0 15px #ff0000;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      text-shadow: 0 0 10px #ff4c4c;
-    }
-
-    /* Navigation Buttons */
-    nav {
-      margin-top: 1rem;
-    }
-
-    nav button {
-      background-color: #330000;
-      color: #ff4c4c;
-      border: 2px solid #ff0000;
-      border-radius: 5px;
-      padding: 0.5rem 1rem;
-      margin: 0.3rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    nav button:hover {
-      background-color: #ff0000;
-      color: #000;
-      transform: scale(1.05);
-    }
-
-    /* Main Content */
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      text-shadow: 0 0 5px #ff0000;
-    }
-
-    p {
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
-      color: #ff6666;
-      text-align: justify;
-    }
-
-    /* Video Container */
-    #video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      margin-bottom: 2rem;
-      border: 2px solid #ff0000;
-      border-radius: 10px;
-      box-shadow: 0 0 15px #ff0000;
-    }
-
-    #video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Back to Home Button */
-    .back-home {
-      display: inline-block;
-      text-decoration: none;
-      background-color: #330000;
-      color: #ff4c4c;
-      padding: 0.7rem 1.2rem;
-      border-radius: 5px;
-      font-weight: bold;
-      border: 2px solid #ff0000;
-      transition: all 0.3s ease;
-      margin-top: 1rem;
-    }
-
-    .back-home:hover {
-      background-color: #ff0000;
-      color: #000;
-      transform: scale(1.05);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -143,7 +34,11 @@
           allowfullscreen>
         </iframe>
       </div>
-      <a href="index.html" class="back-home">Back to Home</a>
+
+      <div class="button-group">
+        <a href="index.html">Back to Home</a>
+        <a href="journals/code_review_journal.html">View Code Review Journal</a>
+      </div>
     </section>
   </main>
 </body>

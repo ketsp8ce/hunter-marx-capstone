@@ -1,39 +1,56 @@
 /* ------------------------
-   Base styles & typography
+   Google Fonts Import
+------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Press+Start+2P&display=swap');
+
+/* ------------------------
+   Base Styles & Typography
 ------------------------ */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Fira Code', Consolas, Monaco, monospace;
-  background-color: #1e1e2f; /* Dark VS Code-style background */
-  color: #c0c0c0;
-  line-height: 1.6;
+  font-family: 'Roboto', sans-serif; /* Clean font for paragraphs */
+  background-color: #1b0b0b; /* Dark red-black background */
+  color: #f2f2f2;
+  line-height: 1.7;
 }
 
+/* ------------------------
+   Links
+------------------------ */
 a {
-  color: #0ff; /* Neon cyan for links */
+  color: #ff3b3b; /* Neon red for links */
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff6eff; /* Neon pink on hover */
-  text-shadow: 0 0 5px #ff6eff, 0 0 10px #ff6eff;
+  color: #ff6f91; /* Pinkish glow */
+  text-shadow: 0 0 5px #ff6f91, 0 0 10px #ff3b3b;
 }
 
 /* ------------------------
    Headers
 ------------------------ */
 header {
-  background-color: #252535;
+  background-color: #2a0a0a;
   padding: 1.5rem;
   text-align: center;
-  border-bottom: 2px solid #0ff;
+  border-bottom: 3px solid #ff3b3b;
 }
 
 header h1 {
-  color: #0ff;
-  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  font-family: 'Press Start 2P', cursive; /* Retro arcade/gothic style */
+  color: #ff3b3b;
+  text-shadow: 0 0 15px #ff3b3b, 0 0 25px #ff0000;
   margin: 0;
+}
+
+/* Section Headers */
+h2, h3, h4 {
+  font-family: 'Press Start 2P', cursive;
+  color: #ff3b3b;
+  text-shadow: 0 0 5px #ff3b3b, 0 0 10px #ff6f91;
+  margin-top: 1.5rem;
 }
 
 /* ------------------------
@@ -48,21 +65,22 @@ nav {
 }
 
 button {
-  background-color: #0ff;
-  color: #1e1e2f;
+  background-color: #ff3b3b;
+  color: #1b0b0b;
   border: none;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  box-shadow: 0 0 10px #ff3b3b, 0 0 20px #ff6f91;
   transition: all 0.2s ease-in-out;
+  font-family: 'Press Start 2P', cursive;
 }
 
 button:hover {
-  background-color: #ff6eff;
+  background-color: #ff6f91;
   color: #fff;
-  box-shadow: 0 0 15px #ff6eff, 0 0 30px #ff6eff;
+  box-shadow: 0 0 15px #ff6f91, 0 0 30px #ff3b3b;
 }
 
 /* ------------------------
@@ -72,41 +90,29 @@ main {
   padding: 2rem;
 }
 
-/* Neon section for dynamically loaded content */
-.neon-section {
+section {
   margin-bottom: 3rem;
-  padding: 1.5rem;
-  background-color: #2a2a3f;
+  padding: 2rem;
+  background-color: #220707;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2),
-              0 0 30px rgba(255, 0, 255, 0.1);
+  box-shadow: 0 0 15px rgba(255, 59, 59, 0.4),
+              0 0 30px rgba(255, 111, 145, 0.2);
 }
 
-.neon-section h2 {
-  color: #ff6eff;
-  text-shadow: 0 0 5px #ff6eff, 0 0 10px #ff6eff;
-}
-
-.neon-section:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4),
-              0 0 40px rgba(255, 0, 255, 0.2);
+section:hover {
+  box-shadow: 0 0 25px rgba(255, 59, 59, 0.6),
+              0 0 50px rgba(255, 111, 145, 0.3);
 }
 
 /* ------------------------
-   Sections (static content)
+   Paragraphs
 ------------------------ */
-section {
-  margin-bottom: 3rem;
-  padding: 1.5rem;
-  background-color: #2a2a3f;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2),
-              0 0 30px rgba(255, 0, 255, 0.1);
-}
-
-section h2 {
-  color: #ff6eff;
-  text-shadow: 0 0 5px #ff6eff, 0 0 10px #ff6eff;
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #f2f2f2;
+  max-width: 900px;
+  margin: 1rem auto;
+  line-height: 1.8;
 }
 
 /* ------------------------
@@ -114,62 +120,21 @@ section h2 {
 ------------------------ */
 img {
   max-width: 100%;
-  border: 2px solid #0ff;
+  border: 2px solid #ff3b3b;
   border-radius: 8px;
-  box-shadow: 0 0 10px #0ff, 0 0 20px #ff6eff;
-}
-
-/* ------------------------
-   Footer
------------------------- */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #252535;
-  border-top: 2px solid #ff6eff;
-  color: #888;
-  font-size: 0.9rem;
+  box-shadow: 0 0 10px #ff3b3b, 0 0 20px #ff6f91;
 }
 
 /* ------------------------
    Code blocks / pre
 ------------------------ */
 pre, code {
-  background-color: #1e1e2f;
-  color: #0ff;
+  background-color: #2a0a0a;
+  color: #ff3b3b;
   padding: 0.5rem;
   border-radius: 6px;
   overflow-x: auto;
-}
-
-/* ------------------------
-   Project Highlights
------------------------- */
-.project-highlight {
-  background-color: #2a2a3f;
-  border: 1px solid #0ff;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-}
-
-.project-highlight img {
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 1rem;
-  border: 2px solid #ff6eff;
-  border-radius: 6px;
-  box-shadow: 0 0 8px #ff6eff;
-}
-
-.project-highlight p {
-  font-size: 0.95rem;
-  color: #c0c0c0;
+  font-family: 'Fira Code', monospace;
 }
 
 /* ------------------------
@@ -178,28 +143,62 @@ pre, code {
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #121212;
-  color: #00ffcc;
-  border: 1px solid #00ffcc;
+  background-color: #1b0b0b;
+  color: #ff3b3b;
+  border: 1px solid #ff3b3b;
 }
 
 th, td {
-  border: 1px solid #00ffcc;
+  border: 1px solid #ff3b3b;
   padding: 10px;
   text-align: left;
 }
 
 th {
-  background-color: #0a0a0a;
-  color: #00e0ff;
+  background-color: #220707;
+  color: #ff6f91;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 /* ------------------------
-   Glow effect for sections
+   Project Highlights / Neon Cards
 ------------------------ */
-section:hover, .project-highlight:hover, .neon-section:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4),
-              0 0 40px rgba(255, 0, 255, 0.2);
+.project-highlight {
+  background-color: #220707;
+  border: 1px solid #ff3b3b;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 59, 59, 0.4);
+}
+
+.project-highlight img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
+  border: 2px solid #ff6f91;
+  border-radius: 6px;
+  box-shadow: 0 0 8px #ff6f91;
+}
+
+.project-highlight p {
+  font-size: 0.95rem;
+  color: #f2f2f2;
+}
+
+/* ------------------------
+   Footer
+------------------------ */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2a0a0a;
+  border-top: 2px solid #ff6f91;
+  color: #ccc;
+  font-size: 0.9rem;
 }
