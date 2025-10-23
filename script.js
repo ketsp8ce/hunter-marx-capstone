@@ -1,34 +1,52 @@
 // Function to load a page into a container
 function loadPage(url, containerId = 'content') {
+  const container = document.getElementById(containerId);
+  if (!container) return; // stop if container doesn't exist
+
   fetch(url)
     .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       return response.text();
     })
     .then(html => {
-      document.getElementById(containerId).innerHTML = html;
+      container.innerHTML = html;
     })
     .catch(err => {
-      document.getElementById(containerId).innerHTML = `<p>Failed to load page: ${url}. Error: ${err}</p>`;
+      container.innerHTML = `<p>Failed to load page: ${url}. Error: ${err}</p>`;
       console.error(`Failed to load ${url}:`, err);
     });
 }
 
-// Load the home content when the page loads
+// Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
-  loadPage('index-content.html');
+
+  // --- Load home content if #content exists ---
+  const mainContent = document.getElementById('content');
+  if (mainContent) {
+    loadPage('index-content.html');
+  }
+
+  // --- Sidebar journal buttons ---
+  const journalsList = document.getElementById('journals-list');
+  if (journalsList) {
+    journalsList.addEventListener('click', function(e) {
+      const btn = e.target;
+      if (btn.tagName === 'BUTTON' && btn.dataset.url) {
+        const container = btn.dataset.container || 'journal-content';
+        loadPage(btn.dataset.url, container);
+      }
+    });
+  }
+
+  // --- Back to Journals links ---
+  const backLinks = document.querySelectorAll('.back-to-journals');
+  backLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      // Assuming your general journals page is 'journals.html'
+      window.location.href = 'journals.html';
+    });
+  });
+
 });
 
-// Event delegation for dynamically loaded buttons inside #content
-document.getElementById('content').addEventListener('click', function(e) {
-  const btn = e.target;
-  
-  // Check if a button with data-url was clicked
-  if (btn.tagName === 'BUTTON' && btn.dataset.url) {
-    // Optional: check if the button is inside a nested container
-    const container = btn.dataset.container || 'content';
-    loadPage(btn.dataset.url, container);
-  }
-});
