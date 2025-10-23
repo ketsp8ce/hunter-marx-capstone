@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capstone Journals</title>
   <link rel="stylesheet" href="../style.css">
-  <script src="../js/your-script.js"></script>
+  <script src="../js/your-script.js" defer></script>
 </head>
 <body>
   <header>
@@ -15,22 +15,18 @@
     </nav>
   </header>
 
-  <main>
-    <section id="journals-page" style="display: flex; gap: 20px; flex-wrap: wrap;">
-      <!-- Sidebar of journal buttons -->
-      <div id="journals-list" style="flex: 1; min-width: 200px;">
-        <button data-url="career_journal.html" data-container="journal-content">Career Journal</button>
-        <button data-url="code_review_journal.html" data-container="journal-content">Code Review Journal</button>
-        <button data-url="emerging_trends_journal.html" data-container="journal-content">Emerging Trends Journal</button>
-      </div>
+  <main style="padding: 20px;">
+    <!-- Journal selection buttons at top -->
+    <div id="journals-list" style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+      <button data-url="career_journal.html" data-container="journal-content">Career Journal</button>
+      <button data-url="code_review_journal.html" data-container="journal-content">Code Review Journal</button>
+      <button data-url="emerging_trends_journal.html" data-container="journal-content">Emerging Trends Journal</button>
+    </div>
 
-      <!-- Content area for selected journal -->
-      <div id="journal-content" style="flex: 3; border: 2px solid #ff0000; padding: 15px; background-color: #1e0a0a; color: #fff; border-radius: 8px;">
-        <p>Select a journal from the left to view it here.</p>
-      </div>
-    </section>
+    <!-- Content area below the buttons -->
+    <div id="journal-content" style="border: 2px solid #ff0000; padding: 15px; background-color: #1e0a0a; color: #fff; border-radius: 8px;">
+      <p>Select a journal from above to view it here.</p>
+    </div>
   </main>
-
-  <script src="../script.js"></script>
 </body>
 </html>
